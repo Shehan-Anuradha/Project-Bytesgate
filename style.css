@@ -139,13 +139,18 @@ body{
 
 /*quiz*/
 .quiz_box{
-    width: 550px;
+    width: 650px;
     background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+}
+@media screen and (max-width:680px) {
+    .quiz_box{
+        width: 400px;
+    } 
 }
 
 .quiz_box header{
@@ -215,13 +220,13 @@ section{
 }
 /*question text*/
 section .que_text{
-    font-size: 25px;
+    font-size: 19px;
     font-weight: 600;
 }
 
 @media screen and (max-width:680px) {
     section .que_text{
-        font-size: 16px;
+        font-size: 12px;
     } 
 }
 
