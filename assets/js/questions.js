@@ -11,7 +11,7 @@ let questions = [
       "They are sitting unescorted at a coworker's desk."
     ]
   },
-    /*{
+    {
     numb: 2,
     question: "Which of the following statements is true",
     answer: "Emails that request sensitive information of any sort should be treated with skepticism.",
@@ -110,5 +110,5 @@ let questions = [
       "To build trust"
     ]
   },
-*/
+
 ];
