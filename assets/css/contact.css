@@ -1,0 +1,129 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 2995px;
+}
+
+.u-section-1 .u-image-1 {
+  height: 160px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.u-section-1 .u-text-1 {
+  margin: -106px auto 0 50px;
+}
+
+.u-section-1 .u-text-2 {
+  margin: 70px 50px 0;
+}
+
+.u-section-1 .u-video-1 {
+  height: 622px;
+  width: 949px;
+  margin: -91px auto 8px;
+}
+
+.u-section-1 .embed-responsive-1 {
+  position: absolute;
+}
+
+.u-section-1 .u-video-poster-1 {
+  background-image: url("images/XEtvwzN_xJksd.jpg");
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 2989px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-video-1 {
+    height: 616px;
+    width: 940px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 2845px;
+  }
+
+  .u-section-1 .u-video-1 {
+    height: 472px;
+    width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 2727px;
+  }
+
+  .u-section-1 .u-video-1 {
+    height: 354px;
+    width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 4922px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 440px;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+
+  .u-section-1 .u-text-1 {
+    width: auto;
+    margin-top: -108px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-2 {
+    width: auto;
+    margin-top: 102px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-video-1 {
+    height: 242px;
+    margin-top: -64px;
+    margin-bottom: 60px;
+    margin-right: initial;
+    margin-left: initial;
+    width: auto;
+  }
+}.u-section-2 .u-sheet-1 {
+  min-height: 1014px;
+}
+
+.u-section-2 .u-text-1 {
+  margin: 35px 50px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-2 .u-text-1 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 1576px;
+  }
+
+  .u-section-2 .u-text-1 {
+    width: auto;
+    margin-top: -622px;
+    margin-bottom: 15px;
+  }
+}.u-section-3 .u-sheet-1 {
+  min-height: 15px;
+}
