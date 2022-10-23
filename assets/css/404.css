@@ -1,0 +1,118 @@
+ .u-section-1 {
+  background-image: url("../img/404.jpg");
+  background-position: 50% 50%;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 100vh;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 4.5rem;
+  font-family: Poppins;
+  letter-spacing: 2px;
+  text-transform: none;
+  font-weight: normal;
+  margin: 343px 109px 0;
+}
+
+.u-section-1 .u-text-2 {
+  font-size: 1.25rem;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: none;
+  line-height: 1.4;
+  font-style: italic;
+  width: 630px;
+  margin: 40px auto 0;
+}
+
+.u-section-1 .u-btn-1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-image: none;
+  border-style: solid;
+  font-size: 1.25rem;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: Poppins;
+  font-weight: normal;
+  margin: 99px auto 60px 471px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-text-1 {
+    margin-left: 9px;
+    margin-right: 9px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-top: 30px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 109px;
+    margin-left: 271px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-text-1 {
+    font-size: 3.75rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-left: 51px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-text-1 {
+    width: auto;
+    font-size: 3rem;
+  }
+
+  .u-section-1 .u-text-2 {
+    width: auto;
+    margin-left: 38px;
+    margin-right: 38px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+   .u-section-1 {
+    background-position: 49.9% 50%;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 908px;
+  }
+
+  .u-section-1 .u-text-1 {
+    font-size: 1.875rem;
+    margin-top: 443px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-top: 36px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 72px;
+    margin-left: auto;
+  }
+}
