@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="quiz-container">
+        <div id="the-question-and-options">
+          <div class="question-number">
+            <h3>
+              Question <span class="question-of-total"></span> of
+              <span class="total-question"></span>
+            </h3>
+          </div>
+          <div class="the-question"></div>
+          <div class="options-field"></div>
+        </div>
+
+        <div id="trackers-next">
+          <div class="make-choise__container">
+            <div class="make-choise"></div>
+            <div class="button">
+              <button type="button" class="btn ripple" onclick="next()">
+                Next
+              </button>
+            </div>
+          </div>
+          <div class="answers-tracker"></div>
+        </div>
+      </div>
+
+      <div class="quiz-over">
+        <div class="box">
+          <h1>
+            <span class="game-over"></span> <br /><br />
+            You answered
+            <span class="correct-answers"></span>
+            of
+            <span class="total-question2"></span> questions correctly ! <br />
+            it's
+            <span class="percentage"></span>
+          </h1>
+          <button type="button" class="ripple" onclick="tryAgain()">
+            Play again
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

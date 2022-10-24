@@ -1,0 +1,327 @@
+:root {
+  --color-primary: #2291ea;
+  --color-secondary: #2ea644;
+  --color-btn1: #ff9101;
+  --color-text-dark: #000000;
+  --color-text-light: #ffffff;
+  --color-options: #d6e2eb;
+  --color-correct: rgb(8, 202, 8);
+  --color-wrong: rgb(248, 26, 26);
+  --shadow: 2px 4px 7px rgba(0, 0, 0, 0.15), 1.5px 4.5px 5px rgba(0, 0, 0, 0.1),
+    0px 2.5px 7px rgba(0, 0, 0, 0.15);
+  --shadow-hover: 2px 4px 6px rgba(0, 0, 0, 0.15),
+    1.5px 3.5px 5px rgba(0, 0, 0, 0.1), 0px 2px 8px rgba(0, 0, 0, 0.2),
+    0px 1px 4px rgba(255, 255, 255, 0.15);
+  --shadow-active: 2px 4px 5px rgba(0, 0, 0, 0.15),
+    1px 1px 2px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.2),
+    0px 1px 2px rgba(255, 255, 255, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-family: sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main {
+  background: #216bf3;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container for the quiz */
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90vw;
+  max-width: 600px;
+  min-height: 500px;
+  background-color: var(--color-primary);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+
+.question-number,
+.question,
+.options,
+.button,
+.answers-tracker {
+}
+
+/* Question field */
+.the-question {
+  font-size: 22px;
+  color: var(--color-text-light);
+  padding: 20px 0;
+}
+
+.question-number h3 {
+  color: var(--color-text-light);
+  border-bottom: 1px solid rgba(240, 239, 239, 0.61);
+  padding-bottom: 10px;
+}
+
+/* Answer option fields */
+.options-field div {
+  position: relative;
+  background-color: var(--color-options);
+  font-size: 16px;
+  font-weight: 600;
+  color: #4d4d4d;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  padding: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: 0.2s;
+}
+
+.options-field div:hover {
+  background-color: var(--color-text-light);
+  transform: scale(1.018);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Remove possibility to make choose more options after one has been made */
+.disabled {
+  pointer-events: none;
+}
+
+/* If correct answer */
+.options-field div.correct {
+  z-index: 1;
+  color: var(--color-text-light);
+  box-shadow: none;
+  transition: 0.2s;
+}
+
+.correct::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-correct);
+  color: var(--color-text-light);
+  z-index: -1;
+  opacity: 0;
+  animation: animateBackground 0.2s ease-in-out forwards;
+}
+
+/* If wrong answer */
+.options-field div.wrong {
+  z-index: 1;
+  color: var(--color-text-light);
+  box-shadow: none;
+  transition: 0.2s;
+}
+
+.wrong::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-wrong);
+  z-index: -1;
+  opacity: 0;
+  animation: animateBackground 0.2s ease-in-out forwards;
+}
+
+/* Animation opacity */
+@keyframes animateBackground {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Next button */
+.button .btn {
+  padding: 15px 50px;
+  background-color: var(--color-btn1);
+  font-size: 16px;
+  color: var(--color-text-light);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 15px 0 20px;
+  box-shadow: var(--shadow);
+}
+
+.btn::before {
+  content: "";
+}
+
+.button .btn:hover {
+  background-color: #fd9c1c;
+  transition: 0.15s ease;
+  transform: scale(1.025);
+  box-shadow: var(--shadow-hover);
+}
+
+/* When pressing */
+.button .btn:active {
+  box-shadow: var(--shadow-active);
+  transition: 0.1s;
+}
+
+/* If no choice has been made before pressing "next" this will pop-up, saying you have to make a choice before moving on */
+.make-choice__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.make-choice {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  padding: 15px 25px;
+  margin-top: 15px;
+  color: rgba(255, 0, 0, 0.733);
+  border-radius: 2px;
+}
+
+/* To track/show how many correct or wrong answers by showing colored boxes */
+.answers-tracker {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  border-top: 1px solid rgba(240, 239, 239, 0.61);
+  padding-top: 15px;
+}
+.answers-tracker div {
+  height: 40px;
+  width: 40px;
+  background-color: var(--color-options);
+  box-shadow: var(--shadow);
+  display: inline-block;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+.answers-tracker div.correct {
+  background-color: var(--color-correct);
+  box-shadow: none;
+}
+.answers-tracker div.wrong {
+  background-color: var(--color-wrong);
+  box-shadow: none;
+}
+
+/* Game over result screen */
+.quiz-over {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  display: none;
+}
+.quiz-over.show {
+  display: flex;
+}
+
+.quiz-over .box {
+  max-width: 90vw;
+  background-color: var(--color-secondary);
+  color: var(--color-text-light);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  flex-basis: 700px;
+}
+
+.quiz-over .box h1 {
+  font-size: 36px;
+  margin: 20px 0;
+}
+
+/* Button for play again */
+.quiz-over .box button {
+  background: var(--color-btn1);
+  font-weight: 700;
+  color: var(--color-text-light);
+  border-radius: 4px;
+  padding: 15px 24px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 15px;
+  box-shadow: var(--shadow);
+  transition: 0.2s ease;
+}
+
+.quiz-over .box button:hover {
+  background: #fd9c1c;
+  transform: scale(1.025);
+  box-shadow: var(--shadow-hover);
+}
+
+.quiz-over .box button:active {
+  box-shadow: var(--shadow-active);
+}
+
+/* Ripple effec on the "next" button */
+.ripple {
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.ripple:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.6) 10%,
+    transparent 10.01%
+  );
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform 0.3s, opacity 1s;
+}
+
+.ripple:active:after {
+  transform: scale(0, 0);
+  opacity: 0.3;
+  transition: 0s;
+}
