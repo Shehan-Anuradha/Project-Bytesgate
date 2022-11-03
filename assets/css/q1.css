@@ -1,0 +1,209 @@
+ .u-section-1 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url("../img/mika.jpg");
+  background-position: 50% 50%;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 681px;
+}
+
+.u-section-1 .u-group-1 {
+  width: 609px;
+  min-height: 486px;
+  height: auto;
+  margin: 140px auto 55px;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 0 30px 30px;
+}
+
+.u-section-1 .u-group-2 {
+  width: 527px;
+  background-image: none;
+  min-height: 110px;
+  height: auto;
+  margin: 27px auto 0 15px;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.u-section-1 .u-text-1 {
+  font-family: Poppins;
+  margin: 19px auto 0 26px;
+}
+
+.u-section-1 .u-text-2 {
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 8px auto 0 26px;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
+  font-family: Poppins;
+  margin: 7px auto 0 15px;
+  padding: 9px 239px 10px 238px;
+}
+
+.u-section-1 .u-btn-2 {
+  background-image: none;
+  font-family: Poppins;
+  margin: 7px auto 0 15px;
+  padding: 9px 239px 10px 238px;
+}
+
+.u-section-1 .u-btn-3 {
+  background-image: none;
+  font-family: Poppins;
+  margin: 7px auto 0 15px;
+  padding: 9px 238px 10px;
+}
+
+.u-section-1 .u-btn-4 {
+  background-image: none;
+  font-family: Poppins;
+  margin: 7px auto 0 15px;
+  padding: 9px 238px 10px;
+}
+
+.u-section-1 .u-btn-5 {
+  background-image: none;
+  font-family: Poppins;
+  margin: 22px auto -68px 15px;
+  padding: 10px 80px 10px 79px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 562px;
+  }
+
+  .u-section-1 .u-group-1 {
+    height: auto;
+  }
+
+  .u-section-1 .u-group-2 {
+    height: auto;
+  }
+
+  .u-section-1 .u-container-layout-2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 430px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 323px;
+  }
+
+  .u-section-1 .u-group-1 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-group-2 {
+    width: 520px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-btn-3 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-btn-4 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-btn-5 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 681px;
+  }
+
+  .u-section-1 .u-group-1 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-right: initial;
+    margin-left: initial;
+    width: auto;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .u-section-1 .u-group-2 {
+    width: 320px;
+    min-height: 152px;
+    margin-left: 10px;
+  }
+
+  .u-section-1 .u-text-1 {
+    width: auto;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-top: 7px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-left: auto;
+    padding-right: 136px;
+    padding-left: 134px;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-left: auto;
+    padding-right: 135px;
+    padding-left: 134px;
+  }
+
+  .u-section-1 .u-btn-3 {
+    margin-left: auto;
+    padding-right: 135px;
+    padding-left: 135px;
+  }
+
+  .u-section-1 .u-btn-4 {
+    margin-left: auto;
+    padding-right: 136px;
+    padding-left: 134px;
+  }
+
+  .u-section-1 .u-btn-5 {
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+}
